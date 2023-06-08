@@ -1,10 +1,12 @@
 package com.example.springbasic.student;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service()
+//@Primary
 public class InMemoryStudentService implements StudentService {
     private final InMemoryStudentDao dao;
 
